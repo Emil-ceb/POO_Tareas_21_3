@@ -5,7 +5,7 @@ using UnityEngine;
 public class Players : MonoBehaviour
 {
     public int playerId;
-    public string name;
+    public string names;
     public float health;
     public float speed;
 
@@ -22,7 +22,7 @@ public class Players : MonoBehaviour
         {
             if (bdPlayer.newPlayer[i].playerId==id)
             {
-                this.name=bdPlayer.newPlayer[i].name;
+                this.names=bdPlayer.newPlayer[i].name;
                 this.health=bdPlayer.newPlayer[i].health;
                 this.speed=bdPlayer.newPlayer[i].speed;
             }
