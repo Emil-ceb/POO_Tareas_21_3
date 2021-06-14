@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class baseItems : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public ItemContructor [] newItem;
+    
+    private void Awake() 
     {
-        
-    }
+        newItem = new ItemContructor[2];
 
-    // Update is called once per frame
-    void Update()
-    {
+        newItem[0] = new ItemContructor(01,"Heal gem");
+        newItem[1] = new ItemContructor(02,"Coin");
         
     }
 }

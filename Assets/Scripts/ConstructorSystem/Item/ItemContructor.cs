@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemContructor : MonoBehaviour
+[System.Serializable]
+public class ItemContructor
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public int itemId;
+    public string name;
+    private Transform actualPosition;
+
+    public ItemContructor(int id, string n){
+        this.itemId = id;
+        this.name = n;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
