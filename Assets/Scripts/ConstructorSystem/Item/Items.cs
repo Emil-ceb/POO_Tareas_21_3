@@ -6,8 +6,6 @@ public class Items : MonoBehaviour
 {
     public int itemId;
     public string names;
-    public float health;
-    public float speed;
 
     baseItems bdItem = new baseItems();
     void Start()
