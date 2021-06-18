@@ -6,7 +6,7 @@ public class Players : MonoBehaviour
 {
     public int playerId;
     public string names;
-    public float health;
+    public float hp;
     public float speed;
 
     basePlayer bdPlayer = new basePlayer();
@@ -23,7 +23,7 @@ public class Players : MonoBehaviour
             if (bdPlayer.newPlayer[i].playerId==id)
             {
                 this.names=bdPlayer.newPlayer[i].name;
-                this.health=bdPlayer.newPlayer[i].health;
+                this.hp=bdPlayer.newPlayer[i].health;
                 this.speed=bdPlayer.newPlayer[i].speed;
             }
             

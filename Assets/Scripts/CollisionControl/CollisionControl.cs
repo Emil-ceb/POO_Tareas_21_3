@@ -4,20 +4,30 @@ using UnityEngine;
 
 public class CollisionControl : MonoBehaviour
 {
-    Players playerData;
 
-    private void Start() 
+    Players playerData;
+    
+    // Start is called before the first frame update
+    void Start()
     {
         playerData=GetComponentInParent<Players>();
+        
     }
-    public void damageP(float damage)
-    {
-        playerData.health -=damage;
 
-    }
-    public void healP(float heal)
-    {
-        playerData.health -=heal;
+    public void damageP(){
 
+        playerData.hp -=10;
     }
+ 
+    public void damageP(float daño){
+
+        playerData.hp -=daño;
+    }
+
+    public void cureP(float heal){
+
+        playerData.hp +=heal; 
+    }
+
+
 }

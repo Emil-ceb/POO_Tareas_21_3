@@ -24,11 +24,11 @@ public class InterfaceP : MonoBehaviour
     {
         if (nameTXTP != null)
         {
-            nameTXTP.text = playerData.name;
+            nameTXTP.text = playerData.names;
         }
         if (hpTXTP != null)
         {
-            hpTXTP.text = playerData.health.ToString();
+            hpTXTP.text = playerData.hp.ToString();
         }
         
     }
@@ -38,11 +38,11 @@ public class InterfaceP : MonoBehaviour
 
         if (nameTXTP != null)
         {
-            nameTXTP.text = playerData.name;
+            nameTXTP.text = playerData.names;
         }
         if (hpTXTP != null)
         {
-            hpTXTP.text = playerData.health.ToString();
+            hpTXTP.text = playerData.hp.ToString();
         }
         }
 }

@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    public float damage;
+    public float daño;
+
     public float heal;
 
-    private void OnCollisionEnter(Collision other)
-     {
+
+    private void OnCollisionEnter(Collision other) {
+
+        //Inicia la capsula
+        if (other.gameObject.tag=="Player")
+        {
+            other.gameObject.GetComponent<CollisionControl>().damageP(daño);
+            
+        }
+
+        //Termina
+
 
         if (other.gameObject.tag=="Player")
         {
-            other.gameObject.GetComponent<CollisionControl>().damageP(damage);
-        }
-
-        if (other.gameObject.tag=="Player")
-        {
-            other.gameObject.GetComponent<CollisionControl>().healP(heal);
-        }
-        
+            other.gameObject.GetComponent<CollisionControl>().cureP(heal);
+            
+        }   
     }
 }
